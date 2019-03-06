@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1200px) {
+    #btn_category{
+        padding-right: 45px;
+        width: 100%;
+    }
+    
+   
+
+}
+
+@media only screen and (max-width: 992px) {
+  
+    .serch_t{
+    margin: 15px 0 0 15px;  
+    }
+    
+    
+    
+   
+    
+    
+   
+}
+
+
+@media only screen and (max-width: 768px) {
+   #myBtn {
+        margin-top: 20px;
+        height: 35px;
+   
+    }
+     #btn_basket {
+        position: relative;
+       margin: 15px 0px 25px 0px;
+        
+       height: 35px;
+         
+    }
+    
+
+    
+   
+}
+
+@media only screen and (max-width: 480px) {
+
+   
+}

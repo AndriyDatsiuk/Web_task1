@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            
+    
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media.css">
+      <link rel="stylesheet" href="..//project/js/bootstrap.js">
+      <link rel="stylesheet" href="js/script.js">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      
+</head>
+<body>
+    
+
+   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      
+       <div class="container">
+        
+           <!--logo -->
+           <a class="navbar-brand" href="index.html" title="Розумний магазин побутової техніки"><img src="images/mylogo.png" alt="logo"  ></a>
+           <!--logo -->
+           
+           <!-- toggler-button-icon-->
+       <button class="navbar-toggler" 
+            type="button"
+            data-toggle="collapse" 
+            data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+       </button>
+       
+       
+       
+       
+        
+       <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Головна</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="delivery.html">Доставка та оплата</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Контакти</a>
+                  </li>  
+                  
+            </ul>
+            
+            <ul class="navbar-nav navbar-right" id="ul_right">
+                    
+             <li class="nav-item">
+
+                 <button type="button" class="btn btn-outline-info btn-block" id="myBtn">Sign in</button>
+                 
+
+            <div class="modal fade login-register-form" id="myModal" role="dialog">
+                
+                <div class="modal-dialog modal-sm">
+                   
+                   <div class="modal-content">
+                       
+                       <!-- header_login form -->
+                       <div class="modal-header">
+                           
+                           <ul class="nav nav-tabs mr-auto">
+                           
+                             
+                              <li class="active"><a  data-toggle="tab" href="#login_form"><i class="fas fa-user"></i><small><small><small>Login</small></small></small></a> </li>
+                              
+                               <li ><a data-toggle="tab" href="#reg_form"><i class="fas fa-pencil-alt"></i><small><small><small>Register</small></small></small></a> </li>
+                               
+                           </ul>
+                           <button type="button" class="close" data-dismiss="modal"><small><i class="fas fa-times"></i></small></button>
+                           
+                        
+                       </div>
+                       <!-- header_login form -->
+                       
+                       
+                       <div class="modal-body">
+                            <div class="tab-content">
+                              
+                                <div id="login_form" class="tab-pane active">
+                                                    <form action="/">
+                                                       
+                                                        <div class="form-group">
+                                                            <label for="email"><b>Email:</b></label>
+                                                            <input type="text" placeholder="Enter Email" id="email" name="email" required>
+                                                        </div>
+                                                        
+                                                        <div class="form-group">
+                                                            <label for="psw"><b>Password:</b></label>
+                                                            <input type="password" placeholder="Enter Password" name="psw" required>
+                                                        </div>
+                                                        
+                                                        <div class="checkbox">
+                                                            <label>
+                                                            <input type="checkbox" checked="checked" name="remember"> Remember me?</label>
+                                                        </div>
+                                                        
+                                                         <div class="clearfix">
+                                                          <button type="button" class="btn btn-danger  cancelbtn" data-dismiss="modal"><i class="far fa-times-circle" ></i> Cancel</button>
+                                                          <button type="submit" class="btn btn-info signupbtn">Sign Up</button>
+                                                        </div>
+                                                        
+                                                    </form>
+                                     </div>
+                                            
+                                            
+                                    <div id="reg_form" class="tab-pane fade">
+                                                    <form action="/">
+                                                       
+                                                        <div class="form-group">
+                                                            <label for="email"><b>Email:</b></label>
+                                                            <input type="text" placeholder="Enter Email" name="email" required>
+                                                        </div>
+                                                        
+                                                        <div class="form-group">
+                                                            <label for="psw"><b>Password:</b></label>
+                                                             <input type="password" placeholder="Enter Password" name="psw" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                           
+                                                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                                                             <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                                        </div>
+                                                        
+                                                        <button type="submit" class="btn btn-info reg_but">Register</button>
+                                                    </form>
+                                    </div>
+                               
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+             </li>  
+            <li class="nav-item">
+                 <a  class="btn btn-outline-info btn-block " data-toggle="collapse" href="#" id="btn_basket"><i class="fas fa-shopping-basket"></i></a>
+                 
+
+             </li>  
+           
+            </ul>
+   
+        </div>
+
+   </div>    
+</nav>
+
+         
+           
+                    <!-- content  -->
+        <div class="container">
+                        
+              <div class="row">
+                           
+                                        <!--  sidebar-->
+                                        
+                            <div class="col-lg-3" id="sidebar">
+                             
+                                    <button class="btn btn-info" id="btn_category" onclick="myFunction()">
+                                    <i class="fas fa-angle-double-down"></i> 
+                                    <i class="fas fa-angle-double-down"></i>  Каталог товарів </button>
+                            
+                                        <!--list_category-->
+                                   
+                                    <div class="list-group" id="myDIV">
+                                          <a href="#" class="list-group-item list-group-item-action">
+                                            Побутова техніка
+                                          </a>
+                                          <a href="#" class="list-group-item list-group-item-action">Смартфони та телефони</a>
+                                          <a href="#" class="list-group-item list-group-item-action">Ноутбуки</a>
+                                          <a href="#" class="list-group-item list-group-item-action">Фото та відеокамери</a>
+                                          <a href="#" class="list-group-item list-group-item-action disabled">Електротехніка</a>
+                                          <a href="#" class="list-group-item list-group-item-action disabled">Інструменти та автотовари</a>
+                                    </div>      
+
+                            </div>
+                              
+                               <!-- col-lg-3-->
+                               
+                                            <!-- main content-->
+                                            
+                        <div class="col-lg-9" id="content">
+                               <div class="row">
+                               
+                                <div class="col-lg-12 col-md-12 mb-4" id="serch">
+                                  <form class="example" action="">
+                                  <input type="text" placeholder="Search.." name="search">
+                                  <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+
+                                 </div>
+                               
+                                <div class="col-lg-4 col-md-6 mb-4 top_val" >
+                                  <div class="card">
+                                    <a href="#"><img  class="card-img-top" src="images/product/asusX570.jpg" alt=""></a>
+                                    <div class="card-body">
+                                      
+                                      <h4 class="card-title">
+                                        <a style="text-align:center;" href="#">Asus X570</a>
+                                      </h4>
+                                      <h5>Ціна: 22 300 грн</h5>
+                                      <p class="card-text">ASUS X570UD - ноутбук для тих, хто хоче отримати тонкий, стильний і продуктивний робочий інструмент. Дизайнери компанії створили унікальний дизайн з незвичайною текстурованою кришкою.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                      <button class="btn content_btn_basket" type="button"><i class="fas fa-shopping-basket"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-4 top_val">
+                                  <div class="card">
+                                    <a href="#"><img  class="card-img-top" src="images/product/del.jpg" alt=""></a>
+                                    <div class="card-body">
+                                      <h4 class="card-title">
+                                        <a href="#">Dell Inspiron 7577</a>
+                                      </h4>
+                                      <h5>20 000</h5>
+                                      <p class="card-text">Dell Inspiron 7577 - ультимативний ігровий ноутбук для тих, хто не звик йти на компроміси і хоче отримати максимально якісний пристрій. <br><br>
+                                      <br></p>
+                                    </div>
+                                    <div class="card-footer">
+                                      <button class="btn content_btn_basket" type="button"><i class="fas fa-shopping-basket"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-4 top_val ">
+                                  <div class="card">
+                                    <a href="#"><img  class="card-img-top" src="images/product/Lenovo.jpg" alt=""></a>
+                                    <div class="card-body">
+                                      <h4 class="card-title">
+                                        <a href="#">Lenovo IdeaPad</a>
+                                      </h4>
+                                      <h5>21 000</h5>
+                                      <p class="card-text">Lenovo IdeaPad 720S-15 - стильний, продуктивний і багатофункціональний середньоформатний ноутбук, створений як універсальний пристрій для роботи і мультимедіа. </p>
+                                    </div>
+                                    <div class="card-footer">
+                                      <button class="btn content_btn_basket" type="button"><i class="fas fa-shopping-basket"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                
+                                
+                                <div class="col-lg-4 col-md-6 mb-4 product" id="item4">
+                                  <div class="card">
+                                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                                    <div class="card-body">
+                                      <h4 class="card-title">
+                                        <a href="#">Item One</a>
+                                      </h4>
+                                      <h5>Ціна</h5>
+                                      <p class="card-text">Якийсь там опис</p>
+                                    </div>
+                                    <div class="card-footer">
+                                      <button class="btn content_btn_basket" type="button"><i class="fas fa-shopping-basket"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-4" >
+                                  <div class="card">
+                                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                                    <div class="card-body">
+                                      <h4 class="card-title">
+                                        <a href="#">Item One</a>
+                                      </h4>
+                                      <h5>Ціна</h5>
+                                      <p class="card-text">Якийсь там опис</p>
+                                    </div>
+                                    <div class="card-footer">
+                                      <button class="btn content_btn_basket" type="button"><i class="fas fa-shopping-basket"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-4 ">
+                                  <div class="card">
+                                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                                    <div class="card-body">
+                                      <h4 class="card-title">
+                                        <a href="#">Item One</a>
+                                      </h4>
+                                      <h5>Ціна</h5>
+                                      <p class="card-text">Якийсь там опис</p>
+                                    </div>
+                                    <div class="card-footer">
+                                      <button class="btn content_btn_basket" type="button"><i class="fas fa-shopping-basket"></i></button>
+                                    </div>
+                                  </div>
+                            </div>
+                    </div>
+                </div>
+                                               
+            </div>
+          </div>
+        
+            
+            
+            
+                <!--pagination-->
+       <div class="container">
+           <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                
+            </ul>
+           </nav>
+       </div>
+       
+       <div class="container">
+          <div class="row">
+          <div style="text-align: center;" class="col-lg-12">
+           <p><a href="myStore.html">Автор: Дацюк Андрій</a></p>
+           </div>
+           </div>
+       </div>
+       
+       
+       
+            <!--       footer-->
+       <div class="footer">
+           <div class="container-fluid my_footer">
+               <div class="row">
+                   <div class="col-lg-3  col-md-4 col-sm-6  ">
+                    
+                     <div class="my_brand_footer">
+                      <a class="navbar-brand" href="index.html" title="Розумний магазин побутової техніки"><img src="images/mylogo.png" alt="logo"  ></a>
+                      </div> 
+                      
+                      <h5 class="header_h">Будьте на зв'язку:</h5>
+                      
+                      <a href="#" class="fab fa-facebook-square"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-google"></a>
+                      
+                      
+                   </div>
+                   
+                   <div class="col-lg-3 col-md-4 col-sm-6">
+                       <h6 class="footer_info">Наші сервіси:</h6>
+                       
+                       <ul class="navbar-nav footer_ul">
+                          <li class="list-group-item-outline"> <a class="my_a" href="#">Відгуки про товари</a></li>
+                          <li class="list-group-item-outline"> <a class="my_a" href="#">Відгуки про товари</a></li>
+                          <li class="list-group-item-outline"> <a class="my_a" href="#">Відгуки про магазини </a></li>
+                          <li class="list-group-item-outline"> <a class="my_a" href="#">Bиробники</a></li>
+                          <li class="list-group-item-outline"> <a class="my_a" href="#">Акції магазинів</a></li>
+                        
+      
+                    </ul>
+                       
+                   </div>
+                   
+                   <div class="col-lg-3 col-md-4 col-sm-6 ">
+                       
+                       <h5 class="contacts">Наші контакти:</h5>
+                       <h6 class="h6_contact1"><i class="fas fa-phone tel"></i> +380 99 091 29 56</h6>
+                       
+                       <h6 class="h6_contact2"><i class="fas fa-phone tel"></i> +380 99 091 29 56</h6>
+                   </div>
+                   
+                   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+
+                       <div class="time" style="margin-left: 30px; margin-top: 10px">
+                           <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/702550">
+                           <span style="color:gray;font-size: 18px; margin-left: 18px;">Поточний час у </span>
+                           <br/><small style="margin-left: 30px;"><small>Львів, Україна</small></small></a></h4> 
+                       
+                            <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Europe%2FKiev"
+                                
+                              height="80" width="180" frameborder="0" seamless></iframe> 
+                       
+                       </div>
+                   </div>
+                   
+               </div>
+           </div>
+       </div>
+       
+   
+   <script>
+   
+       $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $("#myModal").modal();
+        });
+        });
+       
+    </script>
+    
+      <script>
+            function myFunction() {
+            var x = document.getElementById("myDIV");
+                
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+             }
+    </script>
+    
+</body>
+</html>

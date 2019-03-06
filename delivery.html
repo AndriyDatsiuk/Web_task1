@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rather</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+<!--    <link rel="stylesheet" href="..//project/js/bootstrap.js">-->
+    
+    <!--bootstrap style-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/media.css">
+    
+    
+    <!--own style-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--javaScript-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+   
+    <!--fa fa icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    
+    
+ 
+</head>
+<body>
+   
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      
+       <div class="container">
+        
+           <!--logo -->
+           <a class="navbar-brand" href="index.html" title="Розумний магазин побутової техніки"><img src="images/mylogo.png" alt="logo"  ></a>
+           <!--logo -->
+           
+           <!-- toggler-button-icon-->
+       <button class="navbar-toggler" 
+            type="button"
+            data-toggle="collapse" 
+            data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+       </button>
+       
+       
+       
+       
+        
+       <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Головна</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="delivery.html">Доставка та оплата</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Контакти</a>
+                  </li>  
+                  
+            </ul>
+            
+            <ul class="navbar-nav navbar-right" id="ul_right">
+                    
+             <li class="nav-item">
+
+                 <button type="button" class="btn btn-outline-info btn-block" id="myBtn">Sign in</button>
+                 
+
+            <div class="modal fade login-register-form" id="myModal" role="dialog">
+                
+                <div class="modal-dialog modal-sm">
+                   
+                   <div class="modal-content">
+                       
+                       <!-- header_login form -->
+                       <div class="modal-header">
+                           
+                           <ul class="nav nav-tabs mr-auto">
+                           
+                             
+                              <li class="active"><a  data-toggle="tab" href="#login_form"><i class="fas fa-user"></i><small><small><small>Login</small></small></small></a> </li>
+                              
+                               <li ><a data-toggle="tab" href="#reg_form"><i class="fas fa-pencil-alt"></i><small><small><small>Register</small></small></small></a> </li>
+                               
+                           </ul>
+                           <button type="button" class="close" data-dismiss="modal"><small><i class="fas fa-times"></i></small></button>
+                           
+                        
+                       </div>
+                       <!-- header_login form -->
+                       
+                       
+                       <div class="modal-body">
+                            <div class="tab-content">
+                              
+                                <div id="login_form" class="tab-pane active">
+                                                    <form action="/">
+                                                       
+                                                        <div class="form-group">
+                                                            <label for="email"><b>Email:</b></label>
+                                                            <input type="text" placeholder="Enter Email" id="email" name="email" required>
+                                                        </div>
+                                                        
+                                                        <div class="form-group">
+                                                            <label for="psw"><b>Password:</b></label>
+                                                            <input type="password" placeholder="Enter Password" name="psw" required>
+                                                        </div>
+                                                        
+                                                        <div class="checkbox">
+                                                            <label>
+                                                            <input type="checkbox" checked="checked" name="remember"> Remember me?</label>
+                                                        </div>
+                                                        
+                                                         <div class="clearfix">
+                                                          <button type="button" class="btn btn-danger  cancelbtn" data-dismiss="modal"><i class="far fa-times-circle" ></i> Cancel</button>
+                                                          <button type="submit" class="btn btn-info signupbtn">Sign Up</button>
+                                                        </div>
+                                                        
+                                                    </form>
+                                     </div>
+                                            
+                                            
+                                    <div id="reg_form" class="tab-pane fade">
+                                                    <form action="/">
+                                                       
+                                                        <div class="form-group">
+                                                            <label for="email"><b>Email:</b></label>
+                                                            <input type="text" placeholder="Enter Email" name="email" required>
+                                                        </div>
+                                                        
+                                                        <div class="form-group">
+                                                            <label for="psw"><b>Password:</b></label>
+                                                             <input type="password" placeholder="Enter Password" name="psw" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                           
+                                                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                                                             <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                                        </div>
+                                                        
+                                                        <button type="submit" class="btn btn-info reg_but">Register</button>
+                                                    </form>
+                                    </div>
+                               
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+             </li>  
+            <li class="nav-item">
+                 <a  class="btn btn-outline-info btn-block " data-toggle="collapse" href="#" id="btn_basket"><i class="fas fa-shopping-basket"></i></a>
+
+             </li>  
+           
+            </ul>
+   
+        </div>
+
+   </div>    
+</nav>
+
+
+    <!--content-->
+    <div class="container">
+       <div class="row">
+       
+                <div class="col-lg-3" id="sidebar">
+                             
+                                <button class="btn btn-info" id="btn_category" onclick="myFunction()">
+                                <i class="fas fa-angle-double-down"></i> 
+                                <i class="fas fa-angle-double-down"></i>  Каталог товарів </button>
+                            
+                                        <!--list_category-->
+                                   
+                            <div class="list-group" id="myDIV">
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            Побутова техніка
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">Смартфони та телефони</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Ноутбуки</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Фото та відеокамери</a>
+                                        <a href="#" class="list-group-item list-group-item-action disabled">Електротехніка</a>
+                                        <a href="#" class="list-group-item list-group-item-action disabled">Інструменти та автотовари</a>
+                             </div>      
+
+                </div>
+                
+                 <div style="background-color: white; margin: 15px 0px 15px 0px;" class="col-lg-9" id="content">
+                    <h3 class="service-title">Способи доставки</h3>
+                     <div class="row">
+                         
+                         
+                        <div class="col-lg-4 pay">
+                            <a href="#"><img src="images/new_posta.png" alt="">
+                               <br>
+                               <span class="span_service">«Нова пошта»</span></a>
+                               
+                               <br>
+                               <p>Доставка у відділення «Нова пошта»
+                               <br>
+                               <br>
+                                З допомогою доставки «Нова пошта», Ви можете отримати товар у найвіддаленіших куточках України.
+                               </p>
+                               
+
+                        </div>
+
+                        <div class="col-lg-4 pay">
+                            <a href="#"><img src="images/ur_post.jpg" alt="">
+                               <br>
+                               <br>
+                               <span class="span_service">«УкрПошта»</span></a>
+                               <p>
+                                  <br>
+                                   Доставка у відділення УкрПошти
+                               </p>
+
+                        </div>
+                        
+                         <div class="col-lg-4 pay">
+                            <a href="#"><img src="images/kurer.png" alt="">
+                               <br>
+                               <p >Доставка курєром на дім</p>
+                               </a>
+                               
+                               <p>
+                               Доставка кур'єром за адресою.
+                               <br>
+                               <br>
+                               Вартість доставки 45грн.
+                               </p>
+
+                        </div>
+
+                     </div>
+                  <!--end row-->
+                  
+                  <h3 style=" margin-top: 45px;" class="service-title">Способи оплати</h3>
+                  <div class="row">
+                      <div class="col-lg-4 pay ">
+                          <span class="span_service">Готівкова</span>
+                          <p>
+                          <br>
+                          Оплата готівкою під час отримання товару</p>
+                      </div>
+                      
+                      <div class="col-lg-4 ">
+                          <span class="span_service">Visa/MasterCard</span>
+                          <p>
+                          <br>
+                          Оплата замовлення онлайн банківською картою Visa і MasterCard.
+                          <br>
+                          <br>
+                          Доставка товару можлива тільки після підтвердження платежу.
+                          </p>
+                      </div>
+                      
+                      <div class="col-lg-4 ">
+                          <span class="span_service">Миттєва розстрочка</span>
+                          
+                          <p>
+                          <br>
+                          Розстрочка за вигідними умовами і без документів.
+                          <br>
+                          <br>
+                          Все, що потрібно для отримання розстрочки- карта ПриватБанку.
+                          </p>
+                      </div>
+                      
+                  </div>
+                
+                    
+                
+                </div>
+                
+
+       </div>
+
+    </div>
+    
+       
+       
+        <!--    footer-->
+    <div class="footer">
+           <div class="container-fluid my_footer">
+               <div class="row">
+                   <div class="col-lg-3  col-md-4 col-sm-6  ">
+                    
+                     <div class="my_brand_footer">
+                      <a class="navbar-brand" href="index.html" title="Розумний магазин побутової техніки"><img src="images/mylogo.png" alt="logo"  ></a>
+                      </div> 
+                      
+                      <h5 class="header_h">Будьте на зв'язку:</h5>
+                      
+                      <a href="#" class="fab fa-facebook-square"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-google"></a>
+                      
+                      
+                   </div>
+                   
+                   <div class="col-lg-3 col-md-4 col-sm-6">
+                       <h6 class="footer_info">Наші сервіси:</h6>
+                       
+                       <ul class="navbar-nav footer_ul">
+                          <li class="list-group-item-outline"> <a class="my_a" href="#">Відгуки про товари</a></li>
+                          <li class="list-group-item-outline"> <a class="my_a" href="#">Відгуки про товари</a></li>
+                          <li class="list-group-item-outline"> <a class="my_a" href="#">Відгуки про магазини </a></li>
+                          <li class="list-group-item-outline"> <a class="my_a" href="#">Bиробники</a></li>
+                          <li class="list-group-item-outline"> <a class="my_a" href="#">Акції магазинів</a></li>
+                        
+      
+                    </ul>
+                       
+                   </div>
+                   
+                   <div class="col-lg-3 col-md-4 col-sm-6 ">
+                       
+                       <h5 class="contacts">Наші контакти:</h5>
+                       <h6 class="h6_contact1"><i class="fas fa-phone tel"></i> +380 99 091 29 56</h6>
+                       
+                       <h6 class="h6_contact2"><i class="fas fa-phone tel"></i> +380 99 091 29 56</h6>
+                   </div>
+                   
+                   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+
+                       <div class="time" style="margin-left: 30px; margin-top: 10px">
+                           <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/702550">
+                           <span style="color:gray;font-size: 18px; margin-left: 18px;">Поточний час у </span>
+                           <br/><small style="margin-left: 30px;"><small>Львів, Україна</small></small></a></h4> 
+                       
+                            <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Europe%2FKiev"
+                                
+                              height="80" width="180" frameborder="0" seamless></iframe> 
+                       
+                       </div>
+                   </div>
+                   
+               </div>
+           </div>
+       </div>
+
+
+<script>
+   
+       $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $("#myModal").modal();
+        });
+        });
+       
+    </script>
+    
+    
+    <script>
+            function myFunction() {
+            var x = document.getElementById("myDIV");
+                
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+             }
+    </script>
+</body>
+</html>

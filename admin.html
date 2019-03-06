@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="file" id="file">
+    <button onclick="readFile(document.getElementById('file'))">ReadFile</button>
+    
+    
+    
+    <script>
+        function readFile(object){
+            var file=object.files[0];
+            var reader=new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload=function(){
+			
+                
+                var requesr={
+                      "categoryRequest": {
+                        "name": "Mobile"
+                      },
+                      "imageRequests": [
+                        {
+                          "img": reader.result
+                        }
+                      ],
+                      "makerRequest": {
+                        "name": "xiomi"
+                      },
+                      "description": "opa",
+                      "name": "test1",
+                      "price": 7
+                      
+                }
+                
+                $.ajax({
+                    url:"http://localhost:8080/product/save",
+                    type:"POST",
+                    contentType:"application/json",
+                    data:JSON.stringify(requesr),
+                    success:function(data){
+                        alert("good");
+                    },
+                    error:function(error){
+                        alert("bad");
+                    }
+                });
+                
+                
+                
+                
+            };
+        }
+    </script>
+</body>
+</html>
